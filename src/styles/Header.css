@@ -23,8 +23,28 @@
   }
   
 
+
+.MaioraMenu {
+  display: table;
+  margin: 0 auto;
+}
+
+.MaioraMenuList {
+	list-style: none;
+	padding: 20px;
+}
+
+.MaioraMenuListItem {
+  display: inline;
+  padding: 20px;
+}
+
 .MaioraHeader {
     width: 100%;
     display: flex;
     flex-direction: row;
+}
+
+.MaioraSubMenuBt {
+  display: inherit;
 }
