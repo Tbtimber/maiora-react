@@ -1,5 +1,5 @@
 import { render, screen } from '@testing-library/react';
-import Header from './Header';
+import App from '../components/App';
 
 test('renders learn react link', () => {
   render(<App />);
