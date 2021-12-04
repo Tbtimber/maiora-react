@@ -51,7 +51,7 @@ const footerItems = [
         subContents: [
             {
                 id: "footerSocialsInstagram",
-                label: "Instagrem",
+                label: "Instagram",
                 link: "/home"
             },
             {

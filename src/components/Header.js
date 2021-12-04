@@ -64,19 +64,38 @@ const menuItems = [
     }
 ];
 
+var currentlyOpenedSubMenu = []
+
+function toggleSubMenu(menuItem) {
+    if(currentlyOpenedSubMenu.includes(menuItem.id+"subMenu")) {
+        currentlyOpenedSubMenu.forEach(element => {
+            document.getElementById(element).classList.remove("open")
+        });    
+        currentlyOpenedSubMenu = []
+    } else {
+        currentlyOpenedSubMenu.forEach(element => {
+            document.getElementById(element).classList.remove("open")
+        });
+        document.getElementById(menuItem.id+"subMenu").classList.add("open")
+        currentlyOpenedSubMenu.push(menuItem.id+"subMenu")
+    }
+}
+
 function MaioraMenuItem({item, index}) {
     return (
-        <div  className="menu-item-container">
-            <Link className="menu-item-button" to={item.route}>{item.label}</Link> 
+        <div className="menu-item-container" onClick={() => toggleSubMenu(item)}>
+            <Link className="menu-item-button" to={item.route}>
+                {item.label}
+            </Link> 
             {item.subMenu ? <img className="cursor_down" src={cursor_down} alt="cursor_down"/>:""}
-            {item.subMenu ? <MaioraSubMenu items={item.subMenu} />:""}
+            {item.subMenu ? <MaioraSubMenu items={item.subMenu} id={item.id} />:""}
         </div>
     )
 }
 
-function MaioraSubMenu({items}) {
+function MaioraSubMenu({items, id}) {
     return (
-        <div className="sub-menu-container open">
+        <div id={id + "subMenu"} className="sub-menu-container">
             {items.map((item, index) => (
                 <div key={`${item.id}-${ index }`} className="sub-menu-item-container">{item.label}</div>    
             ))}
