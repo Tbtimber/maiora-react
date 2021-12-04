@@ -16,7 +16,7 @@ function MaioraRouter() {
                 <Route path="/contact" element={<MaioraContact />} />
                 <Route path="/meetings" element={<MaioraMeetings />} />
             </Routes>
-        </div>
+        </div> 
     )
 }
 

@@ -1,6 +1,6 @@
 function MaioraMeetings() {
     return (
-        <div>
+        <div className="content-test">
             PRENDRE RDV
         </div>
     )
