@@ -1,6 +1,6 @@
 function MaioraBenefit() {
     return (
-        <div>
+        <div className="content-test">
             PRESTATIONS
         </div>
     )
