@@ -1,6 +1,6 @@
 function MaioraAbout() {
     return (
-        <div>
+        <div className="content-test">
             A PROPOS
         </div>
     )

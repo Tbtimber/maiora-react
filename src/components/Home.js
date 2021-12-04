@@ -1,7 +1,7 @@
 function MaioraHome() {
     return (
-        <div>
-            ACCUEIL
+        <div className="content-test">
+            ACCUEILA
         </div>
     )
 }

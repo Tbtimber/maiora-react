@@ -1,6 +1,6 @@
 function MaioraContact() {
     return (
-        <div>
+        <div className="content-test">
             CONTACT
         </div>
     )

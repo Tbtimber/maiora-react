@@ -1,18 +1,7 @@
 import { Link } from 'react-router-dom';
-import logo from '../assets/logo.svg';
+import logo from '../assets/maiore-main-logo.svg';
+import cursor_down from '../assets/cursor_down.svg'
 import '../styles/Header.css';
-
-
-function MaioraLogo() {
-    return (
-        <div className="MaioraLogo">
-            <Link to="/home">
-                <img src={logo} className="Maiora-logo" alt="logo" />
-            </Link>
-        </div>
-    )
-}
-
 
 const benefitSubMenuItems = [
     {
@@ -46,66 +35,73 @@ const menuItems = [
     {
         id: "home",
         route: "/home",
-        label: "Accueil",
+        label: "ACCUEIL",
         subMenu: undefined
     },
     {
         id: "benefit",
         route: "/benefit",
-        label: "Prestations",
+        label: "PRESTATIONS",
         subMenu: benefitSubMenuItems
     },
     {
         id: "about",
         route: "/about",
-        label: "A propos",
+        label: "A PROPOS",
         subMenu: undefined
     },
     {
         id: "contact",
         route: "/contact",
-        label: "Contact",
+        label: "CONTACT",
         subMenu: undefined
     },
     {
         id: "meetings",
         route: "/meetings",
-        label: "Prendre rendez-vous",
+        label: "PRENDRE RDV",
         subMenu: undefined
     }
 ];
 
-function handleMaioraMenuItemClick(subItems) {
-    console.log(subItems);
-}
-
 function MaioraMenuItem({item, index}) {
     return (
-        <li  className="MaioraMenuListItem"><Link to={item.route}>{item.label}</Link> {item.subMenu ? <div className="MaioraSubMenuBt" onClick={() => handleMaioraMenuItemClick(item.subMenu)}>V</div> : ""}</li>
+        <div  className="menu-item-container">
+            <Link className="menu-item-button" to={item.route}>{item.label}</Link> 
+            {item.subMenu ? <img className="cursor_down" src={cursor_down} alt="cursor_down"/>:""}
+            {item.subMenu ? <MaioraSubMenu items={item.subMenu} />:""}
+        </div>
+    )
+}
+
+function MaioraSubMenu({items}) {
+    return (
+        <div className="sub-menu-container open">
+            {items.map((item, index) => (
+                <div key={`${item.id}-${ index }`} className="sub-menu-item-container">{item.label}</div>    
+            ))}
+        </div>
     )
 }
 
 function MaioraMenu() {
     return (
-        <div className="MaioraMenu">
-            <ul className="MaioraMenuList">
-                {menuItems.map((menuItem, index) => (
-                    <MaioraMenuItem key={`${menuItem.id}-${ index }`} item={menuItem} index={index} />
-                ))}
-            </ul>
+        <div className="maiora-menu-container">
+            {menuItems.map((menuItem, index) => (
+                <MaioraMenuItem key={`${menuItem.id}-${ index }`} item={menuItem} index={index} />
+            ))}
         </div>
     )
 }
 
 function MaioraHeader() {
   return (
-    <div className="MaioraHeader">
-        <MaioraLogo />
+    <nav className="main-nav-menu">
+        <img src={logo} alt="Logo Maiora" />
         <MaioraMenu />
-    </div>
+    </nav>
   );
 }
-
 
 
 export default MaioraHeader;
