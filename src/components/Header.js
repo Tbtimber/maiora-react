@@ -76,8 +76,11 @@ function toggleSubMenu(menuItem) {
         currentlyOpenedSubMenu.forEach(element => {
             document.getElementById(element).classList.remove("open")
         });
-        document.getElementById(menuItem.id+"subMenu").classList.add("open")
-        currentlyOpenedSubMenu.push(menuItem.id+"subMenu")
+        var subMenu = document.getElementById(menuItem.id+"subMenu")
+        if(subMenu) {
+            subMenu.classList.add("open")
+            currentlyOpenedSubMenu.push(menuItem.id+"subMenu")
+        }
     }
 }
 

@@ -1,0 +1,85 @@
+.maiora-breathin-content-div {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1vw
+}
+
+/* Start of Q & A with button type article */
+.maiora-article-qa-button {
+
+}
+
+.maiora-qa-button-question {
+
+}
+
+.maiora-qa-button-answer {
+
+}
+
+.maiora-qa-button-button {
+
+}
+
+/* Start of article offer */
+.maiora-article-offer {
+
+}
+
+.maiora-offer-title {
+
+}
+
+.maiora-offer-grid-container {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: 1fr;
+    /*grid-template-areas: 
+        'one'
+        'two'
+        'three'
+        'four';*/
+}
+
+@media (min-width: 32em) {
+    .maiora-offer-grid-container {
+        grid-template-columns: repeat(2,1fr);
+    }
+}   
+
+
+@media (min-width: 47em) {
+    .maiora-offer-grid-container {
+        grid-template-columns: repeat(3,1fr);
+    }
+}   
+
+
+.maiora-offer-card-div {
+    background-color: brown;
+
+}
+
+.maiora-offer-card-title {
+
+}
+
+.maiora-offer-card-price {
+
+}
+
+.maiora-offer-card-subprice {
+
+}
+
+.maiora-offer-card-content {
+
+}
+
+.maiora-offer-card-button {
+
+}
+
+.maiora-offer-subtext-p {
+
+}
