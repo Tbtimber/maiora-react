@@ -1,0 +1,54 @@
+/* Start of page header article  */
+.maiora-article-page-header {
+    align-self: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.maiora-page-header-img {
+    max-width: 35vw;
+    float: none;
+    align-self: center;
+}
+
+.maiora-page-header-title-img {
+    float: left;
+    display: inline;
+    margin-right: 2vw;
+    margin-top: 1vw;
+    vertical-align: middle;
+    max-width: 15vw;
+}
+
+.maiora-page-header-title {
+    max-width: 35vw;
+    font-family: Bodoni Moda;
+    font-style: normal;
+    color: #4A654E;
+    font-size: 2vw;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    display: inline;
+}
+
+.maiora-page-header-content {
+    max-width: 35vw;
+    letter-spacing: 0.15em;
+    text-align: justify;
+}
+
+
+@media (min-width: 32em) {
+    .maiora-article-page-header {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .maiora-page-header-img {
+        float: right;
+    }
+
+    .maiora-page-header-title-img {
+        margin-left: -7vw;
+    }
+}
