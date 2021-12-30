@@ -11,7 +11,7 @@ function MaioraRouter() {
         <div className="App">
             <Routes>
                 <Route path="/" element={<MaioraHome />} />
-                <Route path="/home" element={<MaioraHome />} />
+                <Route path="/home" element={<MaioraBreathing />} />
                 <Route path="/benefit" element={<MaioraBenefit />} />
                 <Route path="/about" element={<MaioraAbout />} />
                 <Route path="/contact" element={<MaioraContact />} />
