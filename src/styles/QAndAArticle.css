@@ -1,0 +1,19 @@
+/* Start of Question and answer type article */ 
+.maiora-article-qa {
+    background-color: #EFEAE4;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+.maiora-qa-question {
+    font-size: 1.8vw;
+}
+
+.maiora-qa-answer {
+    margin-bottom: 1vw;
+}
+
+.maiora-qa-button {
+    margin-bottom: 1vw;
+    text-align: center;
+}
