@@ -1,11 +1,11 @@
 /* Start of Detailed list article */
 .maiora-article-list {
-    padding-left: 5vw;
-    padding-right: 5vw;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
 }
 
 .maiora-list-title {
-    font-size: 1.8vw;
+    font-size: 2rem;
 }   
 
 .maiora-list-ul {
