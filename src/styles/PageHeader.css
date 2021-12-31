@@ -4,38 +4,43 @@
     display: grid;
     grid-template-columns: 1fr;
     gap: 1.5rem;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .maiora-page-header-img {
-    max-width: 35vw;
+    max-width: 90%;
     float: none;
     align-self: center;
+    margin: auto;
 }
 
 .maiora-page-header-title-img {
     float: left;
     display: inline;
-    margin-right: 2vw;
+    margin-left: 2.5%;
     margin-top: 1vw;
     vertical-align: middle;
     max-width: 15vw;
 }
 
 .maiora-page-header-title {
-    max-width: 35vw;
+    max-width: 90%;
     font-family: Bodoni Moda;
     font-style: normal;
     color: #4A654E;
-    font-size: 2vw;
+    font-size: 40px;
     font-weight: 600;
     letter-spacing: 0.15em;
     display: inline;
+    margin-left: 2.5%;
 }
 
 .maiora-page-header-content {
-    max-width: 35vw;
+    max-width: 90%;
     letter-spacing: 0.15em;
     text-align: justify;
+    margin-left: 2.5%;
 }
 
 
@@ -46,9 +51,19 @@
 
     .maiora-page-header-img {
         float: right;
+        max-width: 90%;
+        margin: 0%;
     }
 
     .maiora-page-header-title-img {
         margin-left: -7vw;
+    }
+
+    .maiora-page-header-title {
+        max-width: 90%;
+    }
+
+    .maiora-page-header-content {
+        max-width: 90%;
     }
 }
