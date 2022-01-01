@@ -1,7 +1,6 @@
 /* Start of Detailed list article */
 .maiora-article-list {
-    padding-left: 2.5%;
-    padding-right: 2.5%;
+    padding: 1.5rem 2.5rem;
 }
 
 .maiora-list-title {
@@ -9,9 +8,20 @@
 }   
 
 .maiora-list-ul {
-
+    list-style: url('../assets/dot_green.svg');
 }
 
 .maiora-list-il {
+    display: flex;
+    font-family: Bodoni Moda;
+    font-style: normal;
+    font-weight: 500;
+    
+    line-height: 38px;
+    letter-spacing: 0.15em;
+    font-size: 1.5rem;
+}
 
+.maiora-list-il-text {
+    margin-left: 1rem;
 }

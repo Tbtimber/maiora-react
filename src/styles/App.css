@@ -12,7 +12,7 @@
   font-family: Modern Era;
   font-style: normal;
   font-weight: normal;
-  font-size: 20px;
+  font-size: 100%;
   line-height: 1.25em;
   color: #4A654E;
   stroke: #BFCEB1;
@@ -27,3 +27,19 @@ body {
   justify-content: center;
   border: 1px solid #CCCCCC;
 }
+
+button {
+  background-color: #4A654E;
+  color: #FFFFFF;
+  padding: 1rem;
+  border: none;
+}
+
+button:hover {
+  filter: brightness(95%) 
+}
+
+button:active {
+  filter: brightness(85%) 
+}
+
