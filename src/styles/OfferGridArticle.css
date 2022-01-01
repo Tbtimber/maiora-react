@@ -1,0 +1,88 @@
+/* Start of article offer */
+.maiora-article-offer {
+    background-color: #EFEAE4;
+}
+
+.maiora-offer-title {
+    font-size: 1.8rem;
+}
+
+.maiora-offer-grid-container {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: 1fr;
+    /*grid-template-areas: 
+        'one'
+        'two'
+        'three'
+        'four';*/
+}
+
+@media (min-width: 32em) {
+    .maiora-offer-grid-container {
+        grid-template-columns: repeat(2,1fr);
+    }
+}   
+
+
+@media (min-width: 47em) {
+    .maiora-offer-grid-container {
+        grid-template-columns: repeat(3,1fr);
+    }
+}   
+
+
+.maiora-offer-card-div {
+    background-color: #FFFFFF;
+    padding: 0.5rem;
+}
+
+.maiora-offer-card-subdiv {
+    border: 1px solid #EFEAE4;
+    padding: 0.5rem;
+    
+}
+
+.maiora-offer-card-title {
+    font-family: Bodoni Moda;
+    font-size: 1.8rem;
+    text-align: center;
+    font-style: normal;
+    
+    font-weight: 600;
+    
+    letter-spacing: 0.15em;
+}
+
+.maiora-offer-card-price {
+    font-size: 2.4rem;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.maiora-offer-card-subprice {
+    font-size: 0.8rem;
+    color: #C0CFB2;
+    text-align: center;
+    margin-top: 0;
+}
+
+.maiora-offer-card-content {
+    color: #4A654E;
+    font-size: 0.85;
+    text-align: center;
+}
+
+.maiora-offer-card-button {
+    align-self: center;
+    margin: 1.5rem auto;
+    display: block;
+}
+
+.maiora-offer-subtext-p {
+    /*4A654E*/
+    border: 1px solid #4A654E;
+    border-width: 0.5px;
+    padding: 0.5rem;
+    text-align: center;
+}

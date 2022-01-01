@@ -43,3 +43,6 @@ button:active {
   filter: brightness(85%) 
 }
 
+article {
+  padding: 1.5rem 2.5rem;
+}
