@@ -1,0 +1,27 @@
+.maiora-home-who-article {
+    display: flex;
+    background-color: #EFEAE4 ;
+}
+
+.maiora-home-who-img {
+    margin-left: 5rem;
+}
+
+.maiora-home-who-content-div {
+    margin-left: 2rem;
+    margin-right: 5rem;
+}
+
+.maiora-home-who-title {
+    font-size: 1.5rem;
+}
+
+.maiora-home-who-content {
+    font-style: normal;
+    font-weight: normal;
+}
+
+.maiora-home-who-button {
+    display: block;
+    margin: auto;
+}
