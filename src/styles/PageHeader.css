@@ -10,9 +10,8 @@
 
 .maiora-page-header-img {
     max-width: 90%;
-    float: none;
     align-self: center;
-    margin: auto;
+    margin-left: 5%;
 }
 
 .maiora-page-header-title-img {
@@ -39,16 +38,35 @@
 .maiora-page-header-content {
     max-width: 90%;
     letter-spacing: 0.15em;
-    text-align: justify;
+    /*text-align: justify;*/
     margin-left: 2.5%;
 }
 
 
 @media (min-width: 32em) {
+
+    .maiora-page-header-title-img {
+        margin-left: -7vw;
+    }
+
+    .maiora-page-header-title {
+        max-width: 90%;
+    }
+
+    .maiora-page-header-content {
+        max-width: 90%;
+    }
+
+    .maiora-page-header-right-div {
+        align-self: end;
+    }
+}
+
+@media (min-width: 47em) {
     .maiora-article-page-header {
         grid-template-columns: repeat(2, 1fr);
     }
-
+    
     .maiora-page-header-img {
         float: right;
         max-width: 90%;
@@ -65,5 +83,9 @@
 
     .maiora-page-header-content {
         max-width: 90%;
+    }
+
+    .maiora-page-header-right-div {
+        align-self: end;
     }
 }

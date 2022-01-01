@@ -1,7 +1,5 @@
 .maiora-breathin-content-div {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1vw
+    
 }
 
 /* Start of Q & A with button type article */
