@@ -1,0 +1,67 @@
+.maiora-home-values-article {
+    padding-bottom: 7rem;
+}
+
+
+
+.maiora-home-values-img {
+    display: inline;
+    vertical-align: middle;
+    max-width: 60px;
+}
+
+.maiora-home-values-title {
+    font-size: 1.5rem;
+    color: #4A654E;
+    margin-left: 1.5rem;
+    display: inline;
+    vertical-align: middle;
+}
+
+.home-values-card-title {
+    font-family: Bodoni Moda;
+    font-style: normal;
+    font-size: 1.2rem; 
+    text-align: center;
+}
+
+.home-values-content-flex {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    align-self: center;
+    
+}
+
+.home-valus-card-content {
+    font-size: 1rem;
+}
+
+.home-values-vert-sep {
+    display: inline;
+    min-width: 1px;
+    max-width: 1px;
+    background-color: #000000;
+    height: 100%;
+    vertical-align: middle;
+}
+
+@media (min-width: 47em) {
+    .maiora-home-values-img {
+        max-width: 120px;
+    }
+
+    .home-value-title-section {
+        margin-left: 3rem;
+    }
+
+    .home-values-card-title {
+        text-align: left;
+    }
+
+    .home-values-content-flex {
+        margin-left: 7rem;
+        margin-right: 7rem;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

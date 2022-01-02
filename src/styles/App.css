@@ -8,6 +8,16 @@
   src: url('../assets/fonts/BodoniModa-VariableFont_opsz_wght.ttf');
 }
 
+.maiora-bold {
+  font-weight: bold !important;
+}
+
+.maiora-light-green {
+  color: #C0CFB2 !important;
+}
+
+
+
 * {
   font-family: Modern Era;
   font-style: normal;
@@ -16,6 +26,7 @@
   line-height: 1.25em;
   color: #4A654E;
   stroke: #BFCEB1;
+  letter-spacing: 0.15em;
 }
 
 body {

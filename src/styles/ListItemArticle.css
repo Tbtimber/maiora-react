@@ -5,19 +5,40 @@
 
 .maiora-list-ul {
     list-style: url('../assets/dot_green.svg');
+    display: grid;
+    grid-template-columns: 1fr;
 }
 
 .maiora-list-il {
-    display: flex;
+    display: inline;
     font-family: Bodoni Moda;
     font-style: normal;
     font-weight: 500;
-    
     line-height: 38px;
     letter-spacing: 0.15em;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+    vertical-align: middle;
+    margin-bottom: 1.5rem;
 }
 
 .maiora-list-il-text {
     margin-left: 1rem;
+    display: inline;
+}
+.maiora-list-il-img {
+    display: inline;
+    height: 3rem;
+    width: 3rem;
+    vertical-align: middle;
+}
+
+@media (min-width: 37em) {
+    .maiora-list-ul {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .maiora-list-il-img {
+        height: 3rem;
+        width: 3rem;
+        vertical-align: middle;
+    }
 }
