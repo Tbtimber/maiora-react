@@ -1,10 +1,10 @@
 .maiora-home-who-article {
-    display: flex;
     background-color: #EFEAE4 ;
 }
 
 .maiora-home-who-img {
     margin-left: 5rem;
+    align-self: center;
 }
 
 .maiora-home-who-content-div {
@@ -25,3 +25,10 @@
     display: block;
     margin: auto;
 }
+
+@media (min-width: 47em) {
+    .maiora-home-who-article {
+        display: flex;
+    }
+}
+
