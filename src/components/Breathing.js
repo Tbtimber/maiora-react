@@ -4,7 +4,7 @@ import pageHeaderTitleImg from '../assets/breathing_picto.svg';
 import PageHeaderArticle from "./articles/PageHeader"
 import QAndAArticle from "./articles/QAndAArticle"
 import ListItemArticle from "./articles/ListItemArticle"
-
+import OfferGridArticle from './articles/OfferGridArticle';
 
 function MaioraBreathing() {
     return (
@@ -31,40 +31,10 @@ function MaioraBreathing() {
                             displayBt={breathingData.qa2.displayBt} 
                             />
 
-            <article class="maiora-article-offer">
-                <h1 class="maiora-offer-title">Les formules contenant la Box Respiration: </h1>
-                <div class="maiora-offer-grid-container">
-                    <div class="maiora-offer-card-div">
-                        <h1 class="maiora-offer-card-title">La Box respiration</h1>
-                        <h2 class="maiora-offer-card-price">60€</h2>
-                        <p class="maiora-offer-card-subprice"></p>
-                        <p class="maiora-offer-card-content">Le lien contenant les vidéos vous sera envoyé dès le paiement reçu. </p>
-                        <button class="maiora-offer-card-button">J'en profite</button>
-                    </div>
-                    <div class="maiora-offer-card-div">
-                        <h1 class="maiora-offer-card-title">Séance de sophrologie & la Box respiration </h1>
-                        <h2 class="maiora-offer-card-price">90€</h2>
-                        <p class="maiora-offer-card-subprice">30€ d’économie</p>
-                        <p class="maiora-offer-card-content">Le lien contenant les vidéos vous sera envoyé dès le paiement reçu. </p>
-                        <button class="maiora-offer-card-button">J'en profite</button>
-                    </div>
-                    <div class="maiora-offer-card-div">
-                        <h1 class="maiora-offer-card-title">3 séances de sophrologie & la Box Respiration</h1>
-                        <h2 class="maiora-offer-card-price">190€</h2>
-                        <p class="maiora-offer-card-subprice">50€ d’économie</p>
-                        <p class="maiora-offer-card-content">Le lien contenant les vidéos vous sera envoyé dès le paiement reçu. </p>
-                        <button class="maiora-offer-card-button">J'en profite</button>
-                    </div>
-                    <div class="maiora-offer-card-div">
-                        <h1 class="maiora-offer-card-title">3 séances de relaxation  + la Box respiration</h1>
-                        <h2 class="maiora-offer-card-price">160€</h2>
-                        <p class="maiora-offer-card-subprice">50€ d’économie</p>
-                        <p class="maiora-offer-card-content">Le lien contenant les vidéos vous sera envoyé dès le paiement reçu. </p>
-                        <button class="maiora-offer-card-button">J'en profite</button>
-                    </div>
-                </div>
-                <p class="maiora-offer-subtext-p">Le paiement se fait par chèque, ou en espèces si vous la séance se déroule au cabinet. Il peut également se faire via Paypal, Pumpkin ou Lydia.</p>
-            </article>
+            <OfferGridArticle   title={breathingData.gridOffer.title}
+                                cards={breathingData.gridOffer.cards}
+                                subtext={breathingData.gridOffer.subtext}
+                                />
         </div>
     )
 }
@@ -132,8 +102,45 @@ const breathingData = {
         "answer": "Dès lors de que je reçois votre inscription, vous receverez un lien contenant les 10 vidéos de la Box Respiration. Vous pouvez vous inscrire en cliquant sur Je m’inscris.",
         "buttonLabel": "Je m'inscris",
         "displayBt": true
+    },
+    "gridOffer": {
+        "title": "Les formules contenant la Box Respiration: ",
+        "subtext": "Le paiement se fait par chèque, ou en espèces si vous la séance se déroule au cabinet. Il peut également se faire via Paypal, Pumpkin ou Lydia.",
+        "cards": [
+            {
+                "id":1,
+                "title": "La Box respiration",
+                "price": "60€",
+                "subprice": "Non",
+                "content": "Le lien contenant les vidéos vous sera envoyé dès le paiement reçu. ",
+                "button": "J'en profite"
+            },
+            {
+                "id":2,
+                "title": "Séance de sophrologie & la Box respiration",
+                "price": "90€",
+                "subprice": "30€ d’économie",
+                "content": "Le lien contenant les vidéos vous sera envoyé dès le paiement reçu. ",
+                "button": "J'en profite"
+            },
+            {
+                "id":3,
+                "title": "3 séances de sophrologie & la Box Respiration",
+                "price": "190€",
+                "subprice": "50€ d’économie",
+                "content": "Le lien contenant les vidéos vous sera envoyé dès le paiement reçu. ",
+                "button": "J'en profite"
+            },
+            {
+                "id":4,
+                "title": "3 séances de relaxation  + la Box respiration",
+                "price": "160€",
+                "subprice": "50€ d’économie",
+                "content": "Le lien contenant les vidéos vous sera envoyé dès le paiement reçu. ",
+                "button": "J'en profite"
+            }
+        ]
     }
-    
 }
 
 export default MaioraBreathing

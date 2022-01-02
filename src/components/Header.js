@@ -3,7 +3,7 @@ import logo from '../assets/maiore-main-logo.svg';
 import cursor_down from '../assets/cursor_down.svg'
 import '../styles/Header.css';
 
-const benefitSubMenuItems = [
+/*const benefitSubMenuItems = [
     {
         id: "sophrology",
         label: "La Sophrologie",
@@ -30,7 +30,7 @@ const benefitSubMenuItems = [
         subMenu: undefined
     }
 ];
-
+*/
 const menuItems = [
     {
         id: "home",
@@ -42,7 +42,7 @@ const menuItems = [
         id: "benefit",
         route: "/benefit",
         label: "PRESTATIONS",
-        subMenu: benefitSubMenuItems
+        subMenu: undefined //benefitSubMenuItems
     },
     {
         id: "about",

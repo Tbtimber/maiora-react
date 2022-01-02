@@ -8,7 +8,7 @@ function ListItemArticle({title, items}) {
             <div className="maiora-list-ul">
                 {items.map((item, index) => (
                     <div key={`${item.id}-${ index }`} className="maiora-list-il">
-                        <img src={greenDot} alt="green_dot"/> <p className='maiora-list-il-text'>{item.text}</p>
+                        <img src={greenDot} alt="green_dot" className="maiora-list-il-img"/> <p className='maiora-list-il-text'>{item.text}</p>
                     </div>
                 ))}
             </div>
