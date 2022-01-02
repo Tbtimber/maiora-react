@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "/maiora-react/static/css/main.4506e8b2.chunk.css",
+    "main.js": "/maiora-react/static/js/main.d29d8851.chunk.js",
+    "main.js.map": "/maiora-react/static/js/main.d29d8851.chunk.js.map",
+    "runtime-main.js": "/maiora-react/static/js/runtime-main.ee2795a6.js",
+    "runtime-main.js.map": "/maiora-react/static/js/runtime-main.ee2795a6.js.map",
+    "static/js/2.f5e1742c.chunk.js": "/maiora-react/static/js/2.f5e1742c.chunk.js",
+    "static/js/2.f5e1742c.chunk.js.map": "/maiora-react/static/js/2.f5e1742c.chunk.js.map",
+    "static/js/3.1a15748c.chunk.js": "/maiora-react/static/js/3.1a15748c.chunk.js",
+    "static/js/3.1a15748c.chunk.js.map": "/maiora-react/static/js/3.1a15748c.chunk.js.map",
+    "index.html": "/maiora-react/index.html",
+    "static/css/main.4506e8b2.chunk.css.map": "/maiora-react/static/css/main.4506e8b2.chunk.css.map",
+    "static/js/2.f5e1742c.chunk.js.LICENSE.txt": "/maiora-react/static/js/2.f5e1742c.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/maiora-react/static/media/ModernEra-Regular.0a585fb1.otf",
+    "static/media/bach_picto_white.4383b484.svg": "/maiora-react/static/media/bach_picto_white.4383b484.svg",
+    "static/media/breathing_picto.3038f729.svg": "/maiora-react/static/media/breathing_picto.3038f729.svg",
+    "static/media/breathing_picto_white.c865e421.svg": "/maiora-react/static/media/breathing_picto_white.c865e421.svg",
+    "static/media/cursor_down.709b3c88.svg": "/maiora-react/static/media/cursor_down.709b3c88.svg",
+    "static/media/ListItemArticle.css": "/maiora-react/static/media/dot_green.d1c09d94.svg",
+    "static/media/home_who.80d56dc8.png": "/maiora-react/static/media/home_who.80d56dc8.png",
+    "static/media/maiore-main-logo.cb478676.svg": "/maiora-react/static/media/maiore-main-logo.cb478676.svg",
+    "static/media/page_header_breathing.848ec6cc.png": "/maiora-react/static/media/page_header_breathing.848ec6cc.png",
+    "static/media/page_header_home.e54643df.png": "/maiora-react/static/media/page_header_home.e54643df.png",
+    "static/media/pivoine.7819838a.svg": "/maiora-react/static/media/pivoine.7819838a.svg",
+    "static/media/pivoine_white.7eba72ba.svg": "/maiora-react/static/media/pivoine_white.7eba72ba.svg",
+    "static/media/relaxation_picto.fbc3c5c4.svg": "/maiora-react/static/media/relaxation_picto.fbc3c5c4.svg",
+    "static/media/relaxation_picto_white.c8d60d0f.svg": "/maiora-react/static/media/relaxation_picto_white.c8d60d0f.svg",
+    "static/media/sophro_picto.6b714d1b.svg": "/maiora-react/static/media/sophro_picto.6b714d1b.svg",
+    "static/media/sophro_picto_white.9e4a3783.svg": "/maiora-react/static/media/sophro_picto_white.9e4a3783.svg",
+    "static/media/tri_picto.c5baa24d.svg": "/maiora-react/static/media/tri_picto.c5baa24d.svg",
+    "static/media/tri_picto_white.1bb4e03a.svg": "/maiora-react/static/media/tri_picto_white.1bb4e03a.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ee2795a6.js",
+    "static/js/2.f5e1742c.chunk.js",
+    "static/css/main.4506e8b2.chunk.css",
+    "static/js/main.d29d8851.chunk.js"
+  ]
+}
